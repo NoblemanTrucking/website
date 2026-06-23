@@ -5,6 +5,7 @@ function getCurrentYear() {
     var currentNotice = (currentYear > 2024) ? '2024 - ' + currentYear : '' + currentYear;
     document.querySelector("#displayYear").innerHTML = currentNotice;
 }
+
 getCurrentYear();
 
 // for carousel in hero section
@@ -15,15 +16,15 @@ $(".owl-carousel").owlCarousel({
     navText: [],
     autoplay: true,
     autoplayHoverPause: true,
-    responsive:{
-        0:{
-            items:1
+    responsive: {
+        0: {
+            items: 1
         },
-        600:{
-            items:2
+        600: {
+            items: 2
         },
-        1000:{
-            items:3
+        1000: {
+            items: 3
         }
     }
 });
